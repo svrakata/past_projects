@@ -1,0 +1,89 @@
+/*----------------------------------------------------------*\
+    #FOOTER
+\*----------------------------------------------------------*/
+
+$footer-color: #f9f9f9;
+$footer-links: #cdcdcd;
+$footer-text: #929292;
+$second-text-color: #437d8b;
+$black: #000000;
+
+.footer {
+    background-color: $footer-color;
+    border-top: 1px solid #ececec;
+    font-family: 'Droid Sans',sans-serif;
+    min-height: 320px;
+    margin-bottom: 100px;
+    padding: 30px 20px;
+}
+
+    .footer-section__content-wrapper {
+        padding: 0 0 0 15px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .footer-logo:hover {
+        text-decoration: none;
+    }
+
+        .footer-logo__img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+        }
+
+        .footer-logo__title-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footer-logo__title {
+            color: $black;
+            font-family: Kreon-light, serif;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo__subtitle {
+            color: $second-text-color;
+            font-family: Kreon-light, serif;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+    .footer__p {
+        color: $footer-text;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer__h3 {
+        font-family: Kreon-light;
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .footer__ul {
+        color: $footer-text;
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 20px;
+    }
+
+    .footer__span {
+        font-weight: bold;
+    }
+
+@media (max-width: 767px) {
+
+    .footer {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+}

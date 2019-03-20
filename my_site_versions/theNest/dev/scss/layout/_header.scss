@@ -1,0 +1,264 @@
+/*----------------------------------------------------------*\
+    #HEADER
+\*----------------------------------------------------------*/
+
+
+
+.main-header {
+    background-color: $normal;
+    font-size: 1.6rem;
+    font-family: $main-font-bold;
+    text-transform: uppercase;
+
+    @include for-phone-only {
+        display: none;
+    }
+
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+
+    @include for-tablet-landscape-up {
+        display: flex;
+    }
+}
+
+    .main-header__container {
+        display: flex;
+        margin: auto;
+        max-width: 1024px;
+        width: 100%;
+
+        @include for-tablet-landscape-up {
+            padding: 10px 20px;
+        }
+
+        @include for-desktop-up {
+            padding: 10px 0;
+        }
+    }
+
+        .main-header-logo {
+            border-right: 1px solid $black;
+            color: $black;
+        }
+
+        .main-header-logo:hover {
+            color: $lightest;
+            transition: color 300ms; 
+        }
+
+            .main-header-logo__img {
+                vertical-align: middle;
+                width: 3em;
+            }
+
+            .main-header-logo__span {
+                margin: 0.8em;
+                vertical-align: middle;
+            }
+
+
+        .main-nav__ul {
+            display: flex;
+            align-items: stretch;
+            height: 100%;
+        }
+
+            .main-nav__a {
+                display: flex;
+                align-items: center;
+                color: $black;
+                height: 100%;
+                margin: 0 0.8em;
+                transition: border 200ms;
+            }
+
+            .main-nav__a--active {
+                border-bottom: 3px solid red;
+            }
+
+            .main-nav__a:hover:not(.main-nav__a--active) {
+                color: $lightest;
+                transition: color 300ms;
+            }
+
+
+
+/*----------------------------------------------------------*\
+    #MOBILE-HEADER&NAV
+\*----------------------------------------------------------*/
+
+
+.mobile-header {
+    background-color: $normal;
+    display: none;
+    font-size: 1.6rem;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    @include for-phone-only {
+        display: flex;
+    }
+
+    @include for-tablet-portrait-up {
+        display: flex;
+    }
+
+    @include for-tablet-landscape-up {
+        display: none;
+    }
+}
+
+    .mobile-header__logo {
+        padding: 0.5rem;
+
+        @include for-phone-only {
+            flex: 0 1 15%;
+        }
+
+        @include for-tablet-portrait-up {
+            flex: 0 1 8%;
+        }
+    }
+
+        .mobile-header__img {
+            vertical-align: middle;
+        }
+    
+    /* ---> hamburger button */
+
+    .mobile-header__button {
+        display: flex;
+        flex: 0 1 15%;
+        flex-direction: column;
+        justify-content: center;
+
+        @include for-tablet-portrait-up {
+            flex: 0 1 8%;
+        }
+
+        @include for-phone-only {
+            flex: 0 1 15%;
+        }
+    }
+
+        .hamb-line {
+            background-color: $darker;
+            flex:0 1 3px;
+            margin: 3px 0;
+            transition: 400ms ease-in-out;
+            width: 35px;
+        }
+
+    .mobile-header__button--clicked .hamb-line1 {
+        transform: translate(0px,9px) rotate(-45deg);
+    }
+
+    .mobile-header__button--clicked .hamb-line2 {
+        opacity: 0;
+    }
+
+    .mobile-header__button--clicked .hamb-line3 {
+        transform: translate(0px,-9px) rotate(45deg);
+    }
+
+    /* ---> END hamburger button */
+
+.mobile-nav {
+    background-color: $darkest-alpha;
+    font-size: 2rem;
+    font-family: $main-font-bold;
+    position: fixed;
+    bottom: 0;
+    overflow: scroll;
+    transition: height 300ms ease-out;
+    height: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+    .mobile-nav__ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        @include for-tablet-portrait-up {
+            justify-content: flex-start;
+        }
+    }
+
+        .mobile-nav__li {
+            position: relative;
+
+            @include for-tablet-portrait-up {
+                flex: 0 0 13%;
+                width: 60%;
+            }
+
+            @include for-phone-only {
+                flex: 0 0 10%;
+                width: 90%;
+            }
+        }
+
+        .mobile-nav__li--first {
+            display: flex;
+            flex: 0 0 15%;
+            align-content: center;
+            justify-content: center;
+
+            @include for-tablet-portrait-up {
+                margin-top: 20px;
+             }
+
+        }   
+
+            .mobile-nav__img {
+                width: 30%;
+                margin-bottom: 20px;
+
+                @include for-tablet-portrait-up {
+                    margin-bottom: 10px;
+                 }
+            }
+
+            .mobile-nav__a {
+                border-bottom: 1px solid $normal;
+                color: $normal;
+                display: flex;
+                position: absolute;
+                right: -40%;
+                align-items: center;
+                justify-content: center;
+                transition: right 600ms ease-in;
+                height: 100%;
+                opacity: 0;
+                width: 100%;
+            }
+
+            .mobile-nav__a1 {
+                transition: right 400ms ease-in, opacity 1s ease-in;
+            }
+
+            .mobile-nav__a2 {
+                transition: right 500ms ease-in, opacity 1s ease-in;
+            }
+
+            .mobile-nav__a3 {
+                transition: right 600ms ease-in, opacity 1s ease-in;
+            }
+
+            .mobile-nav__a4 {
+                transition: right 700ms ease-in, opacity 1s ease-in;
+            }
+
+            .mobile-nav__a--no-transition {
+                transition: right 100ms, opacity 100ms ease-in;
+            }

@@ -1,0 +1,226 @@
+<div class="container">
+
+    <div class="row">
+
+
+
+
+
+        <div id="home-carousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+
+                {{#each carouselArticles}}
+
+                    {{#compare @index 0}}
+
+                        <li data-target="#home-carousel" data-slide-to="{{@index}}" class="active"></li>
+
+                    {{else}}
+
+                        <li data-target="#home-carousel" data-slide-to="{{@index}}"></li>
+
+                    {{/compare}}
+
+                {{/each}}
+
+            </ol>
+
+            <div class="carousel-inner">
+
+                {{#each carouselArticles}}
+
+                    {{#compare @index 0}}
+
+                        <div class="item active carousel-item">
+
+                            <a href="#/article/{{../url}}">
+
+                                <div class="carousel-item__img-wrapper">
+                                    <img src={{../thumbnail}} alt="" class="carousel-item__img">
+                                </div>
+
+                                <section class="carousel-item__section">
+
+                                    <h3 class="carousel-item__h3">{{../headline}}</h3>
+
+                                    <p class="carousel-item__p">{{{../trailText}}}</p>
+
+                                </section>
+
+                            </a>
+
+                        </div>
+
+                    {{else}}
+
+                        <div class="item carousel-item">
+
+                            <a href="#/article/{{../url}}">
+
+                                <div class="carousel-item__img-wrapper">
+                                    <img src={{../thumbnail}} alt="" class="carousel-item__img">
+                                </div>
+
+                                <section class="carousel-item__section">
+
+                                    <h3 class="carousel-item__h3">{{../headline}}</h3>
+
+                                    <p class="carousel-item__p">{{{../trailText}}}</p>
+
+                                </section>
+
+                            </a>
+
+                        </div>
+
+                    {{/compare}}
+
+                {{/each}}
+
+            </div>
+
+            <a class="left carousel-control" href="#home-carousel" data-slide="prev">
+
+                <img src="./assets/images/left-carousel-button.png" alt="" class="carousel-control__img carousel-control__img--go-left">
+
+                <span class="sr-only">Previous</span>
+
+            </a>
+
+            <a class="right carousel-control" href="#home-carousel" data-slide="next">
+
+                <img src="./assets/images/right-carousel-button.png" alt="" class="carousel-control__img carousel-control__img--go-right">
+
+                <span class="sr-only">Next</span>
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+        <header class="home-title">
+
+            <h1 class="home-title__h1">Popular science from around the world and beyond</h1>
+
+            <h4 class="home-title__h4">From a grain of sand to the vast galaxy, science uncovers secrets around you and me</h4>
+
+        </header>
+
+
+
+
+
+        <section class="home-articles">
+
+            <div class="container">
+
+                <div class="row">
+
+                    {{#each mainArticles}}
+
+                        <a href="#/article/{{url}}" class="home-articles__a col-sm-6 col-md-4">
+
+                            <div class="home-articles__item">
+
+                                    <h3 class="home-articles__h3">{{headline}}</h3>
+
+                                    <div class="home-articles__img-wrapper">
+                                        <img src={{thumbnail}} alt={{headline}} class="home-articles__img">
+                                    </div>
+
+                                    <p class="home-articles__p">{{{trailText}}}</p>
+
+                            </div>
+
+                        </a>
+
+                        {{#clearfix-odd @index 3}}
+
+                            <div class="clearfix visible-lg-block visible-md-block"></div>
+
+                        {{/clearfix-odd}}
+
+                        {{#is-odd @index}}
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                        {{/is-odd}}
+
+                    {{/each}}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="col-sm-4 popular-articles">
+
+            <h3 class="popular-articles__h3">Popular stories</h3>
+
+            <ul class="popular-articles__ul">
+
+                {{#each popularArticles}}
+                    <li class="popular-articles__li"><a href="#/article/{{url}}" class="popular-articles__a">{{headline}}</a></li>
+                {{/each}}
+
+            </ul>
+
+        </section>
+
+
+
+
+
+        <section class="col-sm-8 small-carousel">
+
+            <h3 class="small-carousel__h3">Media</h3>
+
+           <div class="owl-carousel small-carousel__body">
+
+               {{#each mainArticles}}
+
+                    <div class="small-carousel__item">
+
+                        <div class="small-carousel__img-wrapper">
+
+                            <a href="#/article/{{url}}">
+                                <img src="{{thumbnail}}" alt="" class="small-carousel__img">
+                            </a>
+
+                        </div>
+                    
+                    </div>
+
+               {{/each}}
+                
+            </div>
+
+            <div class="small-carousel__right-button">
+
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+            </div>
+
+            <div class="small-carousel__left-button">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </div>
+
+        </section>
+
+
+
+
+
+    </div>
+
+</div>

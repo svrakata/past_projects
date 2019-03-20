@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+  min-height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+
+html {
+  height: 100%;
+}
+
+.loader-wrapper-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .loading {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    border-top: 2px solid #1D5C85;
+    border-right: 2px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 2px solid #1D5C85;
+    border-radius: 50%;
+    -webkit-animation: loading-animation 800ms linear 0s infinite forwards;
+            animation: loading-animation 800ms linear 0s infinite forwards;
+  }
+  .loading::before {
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 50%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    content: '';
+  }
+  @-webkit-keyframes loading-animation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes loading-animation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  

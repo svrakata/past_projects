@@ -1,0 +1,45 @@
+.profile {
+    margin-top: 50px;
+}
+
+    .profile-user-info {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .profile__img-wrapper {
+        display: inline-block;
+        height: 250px;
+        width: 250px;
+    }
+
+    .profile__img {
+        height: 250px;
+        object-fit: cover;
+        width: 250px;
+    }
+
+    .profile-upload-form {
+        margin-top: 30px;
+    }
+
+        #profile-upload-form__input {
+            display: none; 
+        }
+
+@media  (max-width: 500px) {
+
+    .profile-user-info, .profile__img-wrapper {
+        display: block;
+        margin: auto;
+    }
+
+    .profile-user-info{ 
+        text-align: center;
+    }
+
+    .profile-upload-form {
+        text-align: center;
+    }
+
+}

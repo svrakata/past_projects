@@ -1,0 +1,6 @@
+mixin pieceOfNews(title, description, urlToImage, url)
+    li.list-inline-item
+        h4 #{title}
+        p #{description}
+        img.img-responsive.img-rounded(src=urlToImage)
+        a(href=url)

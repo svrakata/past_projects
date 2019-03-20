@@ -1,0 +1,31 @@
+.about-container {
+    padding: 20px;
+}
+
+.about-header {
+    text-align: justify;
+}
+
+.about-header__h1 {
+    border-bottom: 1px solid #cccccc;
+}
+
+.about-container > .list-group a, .about-container > .list-group li{
+    margin-left: 20px;
+}
+
+.about-container__h2 {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .about-container > .list-group a,.about-container > .list-group li{
+        margin: 0;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+}

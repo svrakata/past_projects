@@ -1,0 +1,55 @@
+.contact {
+    margin-top: 60px;
+    min-height: 120vh;
+}
+
+.contact .title {
+    margin-top: 40px;
+}
+
+.contact-link-wrapper {
+    min-height: 334px;
+}
+
+    .contact-link {
+        animation: 0.8s 1.5s fadeUp backwards ease-out;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 50%;
+        padding: 15px 0;
+        transition: background-color 500ms ease;
+
+        @include for-phone-only {
+            justify-content: center;
+        } 
+
+
+    }
+
+    .contact-link:hover {
+        border-bottom: 1px solid black;
+    }
+
+        .contact-link__img {
+            vertical-align: middle;
+            width: 80px;
+
+            @include for-phone-only {
+                flex: 0 1 40px;
+            } 
+        }
+
+        .contact-link__span {
+            color: $black;
+            font-size: 1.4em;
+            margin-left: 15px;
+            vertical-align: middle;
+
+            @include for-phone-only {
+                flex: 0 1 100%;
+                text-align: center;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }

@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "users": {
+            "$uid": {
+                ".read": "true",
+                ".write": "auth != null && auth.uid === $uid"
+            }
+        },
+        "comments": {
+            ".read": true,
+            ".write": true
+        },
+        "trips": {
+            ".read": true,
+            ".write": true
+        }
+    }
+}

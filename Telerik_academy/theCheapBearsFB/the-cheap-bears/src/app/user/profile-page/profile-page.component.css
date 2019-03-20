@@ -1,0 +1,48 @@
+.ng-valid:not(form) {
+    border-left: 5px solid #42A948;
+  }
+  
+  .ng-invalid:not(form) {
+    border-left: 5px solid #d65319;
+  }
+
+  #image {
+      display: none;
+  }
+
+  .wrapper {
+      margin-top: 40px;
+      min-height: 1300px;
+  }
+
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    
+    .form-container {
+        margin-bottom: 20px;
+    }
+    
+    .img-container {
+        border: 1px solid grey;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    
+    .img-container img {
+        object-fit: cover;
+        width:250px;
+        height:250px;
+    }
+    
+    /* div {
+        border: 1px solid black;
+    } */

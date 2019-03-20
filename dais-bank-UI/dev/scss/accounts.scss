@@ -1,0 +1,176 @@
+/*----------------------------------------------------------*\
+    #ACCOUNTS&CARDS
+\*----------------------------------------------------------*/
+
+@import 'config';
+
+/*----------------------------------------------------------*\
+    #TRANSACTIONS
+\*----------------------------------------------------------*/
+
+    .transactions {
+        display: none;
+    }
+
+    .transactions__date-search {
+        margin: auto;
+        padding: 2em 0;
+        width: 80%;
+    }
+
+        .transactions-date {
+            border: 1px solid $inactive;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .transactions-date__wrapper {
+            display: inline-block;
+            padding: 0.3em;
+        }
+
+        .transactions-date__range-span {
+            display: block;
+            font-size: 0.8em;
+        }
+
+        .transactions-date__date-span {
+            font-weight: 500;
+        }
+
+        .transactions-date__icon {
+            margin-left: 0.2em;
+            width: 1em;
+        }
+
+        .transactions-search__input{
+            border: 1px solid $inactive;
+            height: 2.7em;
+            margin-left: 1.3em;
+            padding: 0.3em;
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        .transactions-search__buttont {
+            background: url('/assets/img/magnifingglass.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1.6em;
+            border: 1px solid $inactive;
+            border-left: none;
+            height: 2.7em;
+            margin-left: -4px;
+            vertical-align: middle;
+            width: 2.7em;
+        }
+
+    .transactions__item {
+        border-bottom: 1px solid $footer;
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0.6em 0 0.6em 1em;
+    }
+
+
+    .transactions__item:first-child {
+        background-color: $inactive;
+        border-bottom: none;
+        font-weight: 500;
+    }
+
+        .transactions__cell {
+        }
+
+        .transactions__date {
+            flex: 1;
+        }
+
+        .transactions__amount {
+            flex: 1;
+        }
+
+        .transactions__currency {
+            flex: 1;
+        }
+        
+        .transactions__type {
+            flex: 1;
+        }
+
+        .transactions__description {
+            flex: 4;
+        }
+
+
+/*----------------------------------------------------------*\
+    #ACCOUNTS
+\*----------------------------------------------------------*/
+
+.accounts__header {
+    padding-top: 1em;
+}
+
+    .accounts__icon {
+        
+        display: inline-block;
+        height: 1em;
+        margin-right: 0.4em;
+        vertical-align: bottom;
+        width: 1em;
+    }
+    
+    .accounts__icon--accounts {
+        background: url('/assets/img/account-list.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .accounts__icon--cards {
+        background: url('/assets/img/cards-list.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .accounts__title {
+        font-weight: 500;
+        margin: 0;
+        padding: 1.2em 1em;
+        width: 100%;
+    }
+
+    .accounts__item {
+        align-content: flex-start;
+        border-bottom: 1px solid $footer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0.6em 1em;
+    }
+
+    .accounts__item--title {
+        background-color: $inactive;
+    }
+
+    .accounts__cell--title {
+        font-weight: 500;
+    }
+
+        .accounts__id {
+            flex-basis: 50%;
+        }
+
+        .accounts__balance {
+            flex-basis: 15%;
+            text-align: right;
+        }
+
+        .accounts__available {
+            flex-basis: 15%;
+            text-align: right;
+        }   

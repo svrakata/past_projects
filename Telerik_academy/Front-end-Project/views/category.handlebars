@@ -1,0 +1,70 @@
+<div class="container">
+
+    <div class="row">
+
+
+
+
+
+        <ol class="breadcrumb navigation-path">
+            <li class="navigation-path__li-first"><a href="#/home" class="navigation-path__a">Home</a></li>
+            <li class="navigation-path__li"><a href="#/category/{{category}}" class="navigation-path__a">{{category}}</a></li>
+        </ol>
+
+
+
+
+
+        <header class="category-header">
+
+            <h1 class="category-header__h1">{{category}}</h1>
+
+            {{#subheader category}}
+            {{/subheader}}
+
+        </header>
+
+
+
+
+
+        <section class="category-articles col-md-8">
+
+            <div class="category-articles__bucket"></div>
+
+            <ul class="category-pagination">
+
+                {{#generator pages category}}
+
+                    <li class="category-pagination__li">
+                        <a href="#/category/{{category}}?{{page}}" class="category-pagination__a">{{number}}</a>
+                    </li>
+
+                {{/generator}}
+
+            </ul>
+        </section>
+
+
+
+
+
+        <aside class="col-md-4 category-aside">
+
+            <h3 class="category-aside__h3">Archives</h3>
+
+            <ul class="category-aside__ul">
+
+                {{#each archive}}
+                    <li><a href="#/article/{{url}}" class="category-aside__a">{{headline}}</a></li>
+                {{/each}}
+
+            </ul>
+        </aside>
+
+
+
+
+    </div>
+
+</div>

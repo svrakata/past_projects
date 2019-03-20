@@ -1,0 +1,46 @@
+.skills {
+    background-color: #000000;
+}
+
+.skills__title {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.skills__list {
+    padding: 0;
+}
+
+.skills__item {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.skills__name {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: right;
+
+    flex-basis: 165px;
+}
+
+.progress {
+    display: flex;
+    margin-left: 90px;
+}
+
+.progress__point {
+    border: 1px solid #f6b93b;
+    border-radius: 15px;
+
+    margin: 0 10px;
+    
+    height: 30px;
+    width: 30px;
+}
+
+.progress__point--filled {
+    background-color: #f6b93b;
+}

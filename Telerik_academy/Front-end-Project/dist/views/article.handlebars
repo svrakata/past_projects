@@ -1,0 +1,131 @@
+<div class="container">
+
+    <div class="row">
+
+
+
+
+
+        <ol class="breadcrumb navigation-path">
+            <li class="navigation-path__li-first"><a href="#/home" class="navigation-path__a">Home</a></li>
+            <li class="navigation-path__li"><a href="#/category/{{article.category}}" class="navigation-path__a">{{article.category}}</a></li>
+            <li class="navigation-path__li"><a href="#/article/{{article.url}}" class="navigation-path__a">{{article.headline}}</a></li>
+        </ol>
+
+
+
+
+
+        <header class="article-header">
+            <h1 class="article-header__h1">{{article.headline}}</h1>
+            <h2 class="article-header__h2">Posted by Admin on {{article.date}} in <span class="article-header__category-span">{{article.category}}</span></h2>
+        </header>
+
+
+
+
+
+        <section class="article col-md-8">
+
+            <article class="article-item">
+
+                <div class="article-item__info-box">Posted by
+                    <span class="article-item__author-span">Admin</span> on {{article.date}} in
+                    <span class="article-item__category-span">{{article.category}}</span>
+
+                    <span class="article-item__comments-span">
+                        <span class="article-item__count-span">{{article.commentCount}}</span> Comments
+                    </span>
+
+                </div>
+
+                <div class="article-item__img-wrapper">
+                    <div class="article-item__img-shadow"></div>
+                    <img class="article-item__img" src="{{article.thumbnail}}" alt="">
+                </div>
+
+                <p class="article-item__p">{{article.text}}</p>
+
+            </article>
+
+
+
+
+
+            <section class="article-comment-form">
+
+                <h3 class="article-comment-form__title">Leave a Reply</h3>
+
+                <textarea name="comment" class="article-comment-form__textarea" cols="30" rows="10" placeholder="Type your reply here."></textarea>
+
+                <button class="article-comment-form__button">Reply</button>
+
+            </section>
+
+
+
+
+
+            <section class="article-comments">
+
+                {{#if articleComments}}
+
+                    {{#each articleComments}}
+
+                        <div class="article-comment">
+
+                            <div class="article-comment__img-wrapper">
+                                <img src="./assets/images/default-profile.png" alt="" class="article-comment__img img img-thumbnail">
+                            </div>
+
+                            <div class="article-comment__info-box">
+                                <span class="article-comment__author">{{username}}</span>
+                                <span class="article-comment__date">{{date}}</span>
+                                <p class="article-comment__text">{{text}}</p>
+                            </div>
+
+                        </div>
+
+                    {{/each}}
+
+                {{/if}}
+
+            </section>
+
+        </section>
+
+
+
+
+
+        <aside class="col-md-4 article-aside">
+
+            <h3 class="article-aside__h3">Latest Comments</h3>
+
+            {{#if latestComments}}
+
+                <ul class="article-aside__ul">
+
+                    {{#each latestComments}}
+                            <li><a href="#/article/{{articleId}}" class="article-aside__a">{{text}}</a></li>
+                    {{/each}}
+
+                </ul>
+
+                {{else}}
+
+                <ul class="article-aside__ul">
+                        <li>No Comments Yet</li>
+                </ul>
+
+            {{/if}}
+
+        </aside>
+
+
+
+
+
+    </div>
+
+</div>

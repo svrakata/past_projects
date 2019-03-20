@@ -1,0 +1,50 @@
+extends layout/main
+
+append head
+    link(rel="stylesheet", href="/static/css/home.css")
+    title The News That Get You Sober
+append header
+    div.container
+                #msg
+                if msg
+                    each val in msg
+                        div.alert.alert-success= val
+append main
+        if news.length > 0
+            .container
+                .row
+                    .col-sm-8.news-large-thumbnail
+                        a#main-article-anchor(href=`/articles?id=${news[0]._id}`)
+                            if news[0].fields.thumbnail
+                                img(src= news[0].fields.thumbnail, alt='')
+                            else
+                                img(src='./../static/imgs/defaultArticle.png', alt='')
+                            .news-large-title
+                                h1= news[0].fields.headline
+                                p!= news[0].fields.trailText
+                    .col-sm-4.news-small-container
+                        a.news-small-title(href='/') Latest news
+                        .news-small-thumbnail-container
+                            each val in news
+                                a(href=`/articles?id=${val._id}`)
+                                    .news-small-thumbnail
+                                        .small-cover
+                                        if val.fields.thumbnail
+                                            img(src= val.fields.thumbnail, alt='')
+                                        else
+                                            img(src='./../static/imgs/defaultArticle.png', alt='')
+                                        h3= val.fields.headline
+        if unsNews.length > 0 
+            .container.sub-news
+                .row
+                    each val in unsNews
+                        .col-sm-6.col-xs-12.col-md-3.news-middle-thumbnail
+                            a(href=`/articles?id=${val._id}`)
+                                .hover-cover
+                                if val.fields.thumbnail
+                                    img(src= val.fields.thumbnail, alt='')
+                                else
+                                    img(src='./../static/imgs/defaultArticle.png', alt='')
+                                h2= val.fields.headline
+                                p!= val.fields.trailText
+

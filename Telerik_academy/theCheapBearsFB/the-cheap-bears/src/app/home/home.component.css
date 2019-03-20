@@ -1,0 +1,105 @@
+a:hover {
+    text-decoration: none;
+}
+
+.sub-header {
+    position: relative;
+    background-color: #287fb8;
+    border-bottom: 1px solid #eee;
+    box-shadow: 
+    inset 0px 11px 5px -10px #1D5C85,
+    inset 0px -11px 5px -10px #1D5C85; 
+    color: #fff;
+    height: 150px;
+}
+
+.sub-header h1, .sub-header h2 {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.sub-header .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0 10px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.sub-header h1 {
+    font-weight: bold;
+}
+
+.sub-header h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.main-wrapper {
+    background-image: url('./../../assets/images/paper-world-map-travel-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+}
+
+.anchor-container {
+    float: none;
+    margin: 0 auto;
+}
+
+.anchor-wrapper {
+    padding:5px 5px;
+}
+
+.search, .create {
+    background-color: rgba(214, 83, 25, 0.8);
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.search:hover, .create:hover {
+    background-color: rgba(214, 83, 25,1)
+}
+
+.some-content {
+    background-color: #fafbfc;
+    min-height: 500px;
+}
+
+.separator {
+    height: 200px;
+}
+
+.trips-header {
+    background-color: #fafbfc;
+    border-top: 1px solid #fff;
+    box-shadow: 
+    inset 0px 11px 5px -10px #C3C3C3,
+    inset 0px -11px 5px -10px #fafbfc;
+    text-transform: uppercase;
+    height: 80px;
+}
+
+.trips-header h1 {
+    margin: 0;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.trips-info-wrapper {
+    margin-bottom: 100px;
+}
+
+

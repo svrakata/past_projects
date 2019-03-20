@@ -1,0 +1,20 @@
+$normal: rgb(6, 134, 194);
+$lighter: #CFDDE5;
+$lightest: #FEFEFE;
+$darkest: rgb(6, 134, 194);
+$mid-dark: #A1ACB2;
+$darker: #5C6265;
+
+$black: #000000;
+$white: #ffffff;
+$grey: #d8dbe0;
+
+$darkest-alpha: rgba(170, 254, 73, 0.9);
+$lighter-alpha: rgba(207, 221, 229, 0.7);
+$grey-alpha: rgba(216, 219, 224, 0.7);
+$grey-alpha-ticcer: rgba(216, 219, 224, 0.9);
+$white-alpha: rgba(255,255,255, 0.8);
+
+@function whiteAlpha($transparency) {
+    @return rgba(255,255,255, $transparency);
+}

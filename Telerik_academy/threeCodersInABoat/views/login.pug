@@ -1,0 +1,48 @@
+extends layout/main
+append head
+    title thesobernews | Log In To Get Sober
+append main
+    
+    form.well.form-horizontal(action="/login" method="post"  id="contact_form")
+        fieldset
+            legend
+                center
+                    h2
+                        b 
+                            |Login
+        div.container
+            #err
+            if err
+                each val in err
+                    if val.msg
+                        div.alert.alert-danger= val.msg
+                    else
+                        div.alert.alert-success= val
+        div.form-group
+                    label.col-md-4.control-label
+                        |Username
+                    div.col-md-4.inputGroupContainer
+                        div.input-group
+                            span.input-group-addon
+                                i.glyphicon.glyphicon-user
+                            input.form-control(name="username" placeholder="Username"  type="text")
+        div.form-group
+            label.col-md-4.control-label
+                |Password
+            div.col-md-4.inputGroupContainer
+                div.input-group
+                    span.input-group-addon
+                        i.glyphicon.glyphicon-user
+                    input.form-control(name="password" placeholder="Password"  type="password")
+        div.form-group
+            label.col-md-4.control-label
+            div.col-md-4
+                br
+                |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                button#login-button.btn.btn-warning(type="submit")  
+                    |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLOGIN
+                    |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        div.form-group.text-center
+            a#register-anchor(href='/register') 
+                |New User
+

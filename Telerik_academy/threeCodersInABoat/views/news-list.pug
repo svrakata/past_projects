@@ -1,0 +1,30 @@
+extends layout/main
+append head
+	link(rel="stylesheet", href="/static/css/news-list.css")
+	if category
+		title #{category} news | Get Sober
+	else
+		title Found news | Get Sober
+append main
+	if news.length > 0    
+				.container.sub-news
+					.row
+						.category-title
+							h1#categoryHeader= news[0].sectionId
+							span Filter by date: 
+							input#datepicker(type="text",name="datepicker")
+						.divider
+							each val in news
+								.col-sm-6.col-xs-12.col-md-3.news-middle-thumbnail
+									a(href=`/articles?id=${val._id}`)
+										.hover-cover
+										if val.fields.thumbnail
+											img(src= val.fields.thumbnail, alt='')
+										else
+											img(src='./../static/imgs/defaultArticle.png', alt='')
+										h2= val.fields.headline
+										p!= val.fields.trailText
+					button.get-news.btn.btn-default Show more news
+append scripts
+	script(src="./../static/scripts/show-more-news.js")
+	script(src="./../static/scripts/date-filtration.js")

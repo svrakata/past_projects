@@ -1,0 +1,27 @@
+.contact__list {
+    list-style-type: none;
+}
+
+.contact__item {
+    border-bottom: 1px solid #2a444a;
+
+    width: 50%;
+}
+
+.contact__link {
+    color: #2a444a;
+
+    display: block;
+
+    font-size: 22px;
+
+    text-decoration: none;
+    transition: padding  300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), font-size 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    padding: 10px;
+}
+
+.contact__link:hover {
+    font-size: 28px;
+    padding: 30px 10px;
+}

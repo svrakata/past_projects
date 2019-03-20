@@ -1,0 +1,222 @@
+<div class="container">
+
+    <div class="row">
+
+
+
+
+
+        <header class="header">
+
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+
+                    <a class="navbar-brand header-logo" href="#/home">
+
+                        <img class="header-logo__img" src="./assets/images/chameleon-logo.png" alt="chameleon logo of the website">
+
+                        <div class="header-logo__title-wrapper">
+                            <div class="header-logo__title">Chameleon</div>
+                            <div class="header-logo__subtitle">I fucking love science</div>
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="collapse navbar-collapse header-navbar sub-nav">
+
+                    <form class="header-search-form">
+                        <input type="text" class="header-search-form__input header-search-form__input--no-outline" placeholder="Search this website...">
+
+                        <button type="submit" class="header-search-form__button">
+                            <span class="glyphicon glyphicon-search header-search-form__glyphicon" aria-hidden="true"></span>
+                        </button>
+
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right sub-nav__ul">
+                        <li>
+
+                            <a href="#/auth" class="sub-nav__login-btn">
+                                <span class="glyphicon glyphicon-log-in"></span> Login
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#/profile" class="sub-nav__user-btn">
+                                User
+                            </a>
+                            
+                        </li>
+                        <li>
+
+                            <a href="#/logout" class="sub-nav__logout-btn">
+                                <span class="glyphicon glyphicon-log-out"></span> Logout
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="collapse navbar-collapse header-navbar main-nav">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/home" class="main-nav__a">Home</a></li>
+                        <li><a href="#/category/science" class="main-nav__a">Science</a></li>
+                        <li><a href="#/category/technology" class="main-nav__a">Technology</a></li>
+                        <li><a href="#/category/environment" class="main-nav__a">Environment</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+
+
+
+        <div class="content-bucket">
+            
+        </div>
+
+
+
+
+
+        <footer class="footer">
+
+            <div class="row">
+
+
+
+
+
+                <section div class="col-sm-6 col-md-3 footer__section">
+
+                    <div class="footer-section__content-wrapper">
+
+                        <a class="footer-logo" href="#/home">
+
+                            <img class="footer-logo__img" src="./assets/images/chameleon-logo.png" alt="chameleon logo of the website">
+
+                            <div class="footer-logo__title-wrapper">
+                                <div class="footer-logo__title">Chameleon</div>
+                                <div class="footer-logo__subtitle">I fucking love science</div>
+                            </div>
+
+                        </a>
+
+                        <p class="footer__p"><span class="footer__span">&copy; Chameleon Theme 2010</span><br> sit amet augue dui. In hac habitasse platea dictumst. Donec scelerisque aliquet leo, ac volutpat lorem ultricies id. Donec placerat laoreet lorem eget cursus. Donec bibendum luctus purus ac pharetra. Pellentesque posuere accumsan ligula, eget luctus justo pellentesque quis. Aliquam efficitur aliquam faucibus.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+
+
+                <section class="col-sm-6 col-md-3 footer__section">
+
+                        <h3 class="footer__h3">Recent Articles</h3>
+
+                        {{#if articles}}
+
+                            <ul class="article-aside__ul">
+
+                                {{#each articles}}
+                                    <li>
+                                        <a href="#/article/{{./url}}" class="article-aside__a">{{headline}}</a>
+                                    </li>
+                                {{/each}}
+                                
+                            </ul>
+                    
+                            {{else}}
+                    
+                            <ul class="article-aside__ul">
+                                <li>No Articles Yet</li>
+                            </ul>
+                    
+                        {{/if}}
+
+                </section>
+
+
+
+
+
+                <div class="clearfix visible-sm-block"></div>
+
+
+
+
+
+                <section class="col-sm-6 col-md-3 footer__section">
+
+                        <h3 class="footer__h3">Recent Comments</h3>
+
+                        {{#if comments}}
+
+                            <ul class="article-aside__ul">
+
+                                {{#each comments}}
+                                    <li>
+                                        <a href="#/article/{{./articleId}}" class="article-aside__a">{{text}}</a>
+                                    </li>
+                                {{/each}}
+                                
+                            </ul>
+                    
+                            {{else}}
+                    
+                            <ul class="article-aside__ul">
+                                <li>No Recent Comments</li>
+                            </ul>
+                    
+                        {{/if}}
+
+                </section>
+
+
+
+
+                <section class="col-sm-6 col-md-3 footer__section">
+
+                        <h3 class="footer__h3">About</h3>
+
+                        <ul class="footer__ul">
+                            <li><a href="#/about" class="article-aside__a">What Is This</a> </li>
+                            <li><a href="#/about" class="article-aside__a">How It Was Made</a> </li>
+                            <li><a href="#/about" class="article-aside__a">Who Are We</a> </li>
+                        </ul>
+
+                </section>
+
+
+
+
+            </div>
+
+        </footer>
+
+
+
+
+
+    </div>
+
+</div>

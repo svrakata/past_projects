@@ -1,0 +1,50 @@
+/*----------------------------------------------------------*\
+    #HOME
+\*----------------------------------------------------------*/
+
+
+.home-title {
+    color: $darkest;
+    font-size: 3rem;
+    margin-left: 30px;
+}
+    .home-title__word1, 
+    .home-title__word2, 
+    .home-title__word3 {
+        color: $black;
+        display: table;
+        text-transform: uppercase;
+        opacity: 0;
+    }
+
+    .home-title-offword1,
+    .home-title-offword2,
+    .home-title-offword3 {
+        display: table;
+    }
+
+    .home-title__word1 {
+        transform: translate(140px, 0px);
+        transition: transform 700ms ease-out, opacity 1.5s ease-out;
+        font-size: 1.5em;
+    }
+
+    .home-title__word2 {
+        font-size: 2.1em;
+        transform: translate(-100px, 0px);
+        transition: transform 1.3s ease-in-out, opacity 1.5s ease-out;
+    }
+
+    .home-title__word3 {
+        font-size: 3em;
+        transform: translate(100px, 0px);
+        transition: transform 1.5s ease, opacity 1.5s ease-out;
+    }
+
+    .home-title-offword1 {
+        transform: translate(40px, 0px);
+    }
+
+    .home-title-offword2 {
+        transform: translate(120px, 0px);
+    }

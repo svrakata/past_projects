@@ -1,0 +1,13 @@
+@keyframes fadeUp {
+    from {
+        transform: translateY(.25em);
+        opacity: 0
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        transform: translateX(-3em);
+        opacity: 0
+    }
+}

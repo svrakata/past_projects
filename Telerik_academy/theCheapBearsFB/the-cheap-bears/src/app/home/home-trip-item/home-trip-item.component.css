@@ -1,0 +1,69 @@
+.anchor-trip {
+    background-color: #F3F4F5;
+    border: 1px solid #BBBCBC;
+    color: #3C3D3D;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .anchor-trip::before {
+      content: '';
+      width: 100%;
+      border: 1px solid #fff;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .anchor-trip:hover {
+    background-color: #ddd;
+    text-decoration: none;
+  }
+
+  img {
+    object-fit: cover;
+    width:40px;
+    height:40px;
+  }
+  
+  .loader-wrap {
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 200px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+      display: inline-block;
+      margin-right: 30px;
+  }
+  
+  .profile-img,
+  .directions {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .profile-img {
+    border-radius: 20px;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+    margin: 0 5px;
+  }
+  
+  .directions {
+      font-size: 22px;
+  }
+
+.from{
+    color: #C88C8C;
+}
+
+.to {
+    color: #5FA069;
+}

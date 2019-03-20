@@ -1,0 +1,83 @@
+/*----------------------------------------------------------*\
+    #GLOBAL-SETTINGS
+\*----------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: $lightest;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $main-font;
+    font-size: 62.5%;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+      border: none;
+      background-color: transparent;
+  }
+
+  button:focus {
+    outline:0;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+  }
+
+  .content-wrapper {
+      position: relative;
+      height: 100%;
+  }
+
+  .bucket {
+      font-size: 1.6rem;
+  }
+
+  .container {
+    max-width: 1024px;
+    margin: auto;
+    
+        @include for-phone-only {
+            padding: 10px;
+        }
+
+        @include for-tablet-portrait-up {
+            padding: 10px;
+        }
+
+        @include for-tablet-landscape-up {
+            padding: 40px 20px;
+        }
+
+        @include for-desktop-up {
+            padding: 40px 0;
+        }
+    }
+
+    .background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 2s ease;
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }

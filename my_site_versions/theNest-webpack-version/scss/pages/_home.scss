@@ -1,0 +1,39 @@
+/*----------------------------------------------------------*\
+    #HOME
+\*----------------------------------------------------------*/
+
+.home-header {
+    font-size: 1.6rem;
+    padding-top: 5vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.home-title-container {
+    display: table;
+    margin-bottom: 10px;
+}
+
+    .home-title {
+        display: table;
+        color: $white;
+        font-family: $main-font-bold;
+        font-size: 6rem;
+        text-transform: uppercase;
+        animation: 0.8s .5s fadeUp backwards ease-out;
+    }
+
+    .home-subtitle {
+        color: $white;
+        font-size: 4rem;
+        animation: 1.2s .9s fadeUp backwards ease-out;
+    }
+
+.home-content {
+    border-top: 1px solid $normal;
+    position: relative;
+    z-index: 1;
+}
+
+    

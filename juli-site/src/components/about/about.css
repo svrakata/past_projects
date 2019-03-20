@@ -1,0 +1,26 @@
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__img-wrapper {
+    flex: 0 0 40%;
+    margin-right: 30px;
+}
+
+.about__img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about__info {
+    flex: 0 0 60%;
+}
+
+.about__p {
+    font-size: 24px;
+}
+
+.about__p:first-child {
+    margin-top: 0;
+}

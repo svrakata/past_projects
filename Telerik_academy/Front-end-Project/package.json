@@ -1,0 +1,50 @@
+{
+  "name": "front-end-project",
+  "version": "1.0.0",
+  "description": "Front-end project for Telerik Academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svrakata/Front-end-Project.git"
+  },
+  "keywords": [
+    "front-end",
+    "javascript",
+    "SPA",
+    "project"
+  ],
+  "author": "svrakata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svrakata/Front-end-Project/issues"
+  },
+  "homepage": "https://github.com/svrakata/Front-end-Project#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-systemjs-builder": "^0.15.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "systemjs-plugin-babel": "0.0.25"
+  },
+  "dependencies": {
+    "navigo": "^5.3.1",
+    "systemjs": "^0.20.19"
+  }
+}

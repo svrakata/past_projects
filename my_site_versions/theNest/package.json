@@ -1,0 +1,55 @@
+{
+  "name": "thenest",
+  "version": "1.0.0",
+  "description": "mysite, portfolio, sandbox",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svrakata/theNest.git"
+  },
+  "keywords": [
+    "webapp",
+    "SPA",
+    "JS",
+    "CSS",
+    "HTML",
+    "sandbox",
+    "portfolio"
+  ],
+  "author": "svrakata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svrakata/theNest/issues"
+  },
+  "homepage": "https://github.com/svrakata/theNest#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-systemjs-builder": "^0.15.0",
+    "gulp-webserver": "^0.9.1",
+    "systemjs-plugin-babel": "0.0.25"
+  },
+  "dependencies": {
+    "navigo": "^5.3.1",
+    "systemjs": "^0.20.19"
+  }
+}

@@ -1,0 +1,17 @@
+// colors
+
+$second-text-color: #437d8b;
+$subheaders-color: #929292;
+$menu-color: #f4f4f4;
+$footer-color: #f9f9f9;
+$footer-links: #cdcdcd;
+$footer-text: #9f9f9f;
+
+// fonts
+
+@font-face {
+    font-family: BlackJack;
+    src: url('./assets/fonts/blackjack.otf');
+}
+
+$logo-font: BlackJack;

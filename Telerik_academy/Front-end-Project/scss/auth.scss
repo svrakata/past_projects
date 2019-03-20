@@ -1,0 +1,44 @@
+/*----------------------------------------------------------*\
+    #AUTH-FORMS
+\*----------------------------------------------------------*/
+
+.auth-forms {
+    margin-top: 40px;
+}
+
+    .auth-forms__login-btn, .auth-forms__register-btn{
+        background-color: #f0f0f0;
+        border: none;
+        float: left;
+        height: 50px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        width: 50%;
+    }
+        .auth-forms__login-btn:hover, .auth-forms__register-btn:hover {
+            background-color: #c3c3c3;
+            transition: 0.3s;
+        }
+
+    .auth-forms__login-btn{
+        border-right: 1px solid #000000;
+    }
+
+.login-form, .register-form {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.register-form {
+    display: none;
+}
+
+    .register-form__button, .login-form__button {
+        display: block;
+        margin: auto;
+        min-width: 150px;
+    }
+
+    .register-form__button:hover, .login-form__button:hover {
+        background-color: #c3c3c3;
+    }

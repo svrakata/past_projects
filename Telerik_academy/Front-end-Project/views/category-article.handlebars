@@ -1,0 +1,36 @@
+{{#each articlesFragment}}
+
+    <article class="category-articles-item">
+
+
+
+
+
+        <h2 class="category-articles-item__h2">{{headline}}</h2>
+
+        <div class="category-articles-item__info-box">Posted by 
+
+            <span class="category-articles-item__author-span">Admin</span> on {{date}} in 
+            <span class="category-articles-item__category-span">{{category}}</span>
+            <span class="category-articles-item__comments-span"> {{commentCount}} Comments</span>
+
+        </div>
+
+        <div class="category-articles-item__img-wrapper">
+            <div class="category-articles-item__img-shadow"></div>
+            <img class="category-articles-item__img img-thumbnail" src="{{thumbnail}}" alt="">
+        </div>
+
+        <div class="category-articles-item__p-wrapper">
+            <p class="category-articles-item__p">{{text}}</p>
+        </div>
+
+        <a href="#/article/{{url}}" class="category-articles-item__a">Read More</a>
+
+
+
+
+
+    </article>
+
+{{/each}}

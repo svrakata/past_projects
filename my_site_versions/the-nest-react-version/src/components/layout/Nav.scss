@@ -1,0 +1,22 @@
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.nav__item {
+    color: rgb(42,68,74);
+}
+
+.nav__a {
+    display: block;
+    font-size: 26px;
+    color: rgb(42,68,74);
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav__a--active {
+    color: rgb(92,149,161);
+}

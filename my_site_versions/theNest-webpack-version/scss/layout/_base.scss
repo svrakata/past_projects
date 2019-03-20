@@ -1,0 +1,87 @@
+/*----------------------------------------------------------*\
+    #GLOBAL-SETTINGS
+\*----------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: $lightest;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-family: $main-font;
+    font-size: 62.5%;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+      border: none;
+      background-color: transparent;
+  }
+
+  button:focus {
+    outline:0;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+  }
+
+  .content-wrapper {
+      position: relative;
+      height: 100%;
+  }
+
+  .bucket {
+      font-size: 1.6rem;
+      position: relative;
+      
+    @include for-tablet-landscape-up {
+        padding-top: 70px;
+    }
+  }
+
+    .container {
+        max-width: 1024px;
+        margin: auto;
+        padding: 20px;
+    
+    
+        @include for-desktop-up {
+            padding: 50px;
+        }
+    }
+
+    .background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 2s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .page-title{
+        animation: 1s fadeRight cubic-bezier(.2,.63,.44,.78);
+    }

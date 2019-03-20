@@ -1,0 +1,35 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" routerLink="">NT</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a routerLink="trips">Trips</a></li>
+                <li *ngIf="authService.user | async"><a routerLink="trips/create">Create trip</a></li>
+                <li *ngIf="authService.user | async"><a routerLink="trips/mine">My trips</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngIf="!(authService.user | async)"><a routerLink="login">Log in</a></li>
+                <li *ngIf="!(authService.user | async)"><a routerLink="register">Register</a></li>
+                <li class="dropdown" *ngIf="authService.user | async">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            {{ ( authService.user | async)?.displayName }}
+                            <span class="caret"></span>
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a routerLink="profile">Profile</a></li>
+                        <li><a routerLink="car">My cars</a></li>
+                        <li><a (click)="$event.preventDefault();logOut()" href="">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

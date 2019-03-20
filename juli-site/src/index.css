@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+  height: 100%;
+  
+  margin: 0 auto;
+  max-width: 1024px;
+
+  padding: 0 10px;
+}
+
+.container--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.section__title {
+  border-bottom: 1px solid #000000;
+
+  font-size: 40px;
+  margin: 0 0 30px 0;
+}

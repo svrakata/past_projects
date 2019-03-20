@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-2">
+            <h1 class="search-title">Search result: {{resultCount}}</h1>
+        </div>
+
+            <div class="col-sm-8 col-sm-offset-2 search-results">
+
+                {{#each articles}}
+                
+                    <article class="category-articles-item">
+                    
+                        <h2 class="category-articles-item__h2">{{headline}}</h2>
+                    
+                        <div class="category-articles-item__info-box">Posted by
+                    
+                            <span class="category-articles-item__author-span">Admin</span> on {{date}} in
+                            <span class="category-articles-item__category-span">{{category}}</span>
+                            <span class="category-articles-item__comments-span"> {{commentCount}} Comments</span>
+                    
+                        </div>
+                    
+                        <div class="category-articles-item__img-wrapper">
+                            <img class="category-articles-item__img img-thumbnail" src="{{thumbnail}}" alt="">
+                        </div>
+                    
+                        <div class="category-articles-item__p-wrapper">
+                            <p class="category-articles-item__p">{{text}}</p>
+                        </div>
+                    
+                        <a href="#/article/{{url}}" class="category-articles-item__a">Read More</a>
+                    
+                    </article>
+                
+                {{/each}}
+
+            </div>
+
+    </div>
+
+</div>

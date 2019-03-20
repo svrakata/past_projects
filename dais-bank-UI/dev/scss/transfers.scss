@@ -1,0 +1,67 @@
+/*----------------------------------------------------------*\
+    #TRANSFERS&PAYMENTS
+\*----------------------------------------------------------*/
+
+@import 'config';
+
+/*----------------------------------------------------------*\
+    #TRANSFERS
+\*----------------------------------------------------------*/
+
+.transfers {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding: 2em 2em;
+    position: relative;
+    width: 80%;
+}
+
+    .transfers__title {
+        border-bottom: 1px solid $inactive;
+        font-weight: 500;
+        padding: 1em 0 0.2em;
+        margin-bottom: 1em;
+    }
+
+    .transfer__input {
+        width: 50%;
+    }
+
+    .form-group {
+        padding: 0.6em 1em;
+    }
+
+        .transfers__label {
+            display: inline-block;
+            margin-right: 3em;
+            text-align: right;
+            width: 20%;
+        }
+
+        .transfers__button-wrapper {
+            margin-top: 2em;
+            text-align: right;
+        }
+
+            .transfers__buton {
+                background-color: $white;
+                border: 1px solid $inactive;
+                height: 40px;
+                text-transform: uppercase;
+                width: 150px;
+            }
+
+            .transfers__buton:hover {
+                background-color: $footer;
+                border-color: $active;
+                cursor: pointer;
+                transition: all 300ms;
+            }
+
+/*----------------------------------------------------------*\
+    #PAYMENTS
+\*----------------------------------------------------------*/
+
+.payments {
+    display: none;
+}

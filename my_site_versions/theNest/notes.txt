@@ -1,0 +1,6 @@
+1. Check webpack, browserify --- change systemjs, it's tedious to config.
+2. The scheme of knowledge: 
+	a. client side: browser api-s
+		- to read: how browser works, how internet works(TCP,HTTP,HTTPS,headers,request, websockets, REST, AJAX etc. etc.)
+	b. server side: nodejs, what else is there to run JS on SS, CRUD, SQL and JS
+3. Interactive infographs - that will be cool AF, canvas, 3d, animations, CSSanimations, WebGL
